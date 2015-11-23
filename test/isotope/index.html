@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <title>reLayout &middot; Isotope Demo</title>
+  <style type="text/css">
+  /* Start: Recommended Isotope styles */
+
+  /**** Isotope Filtering ****/
+
+  .isotope-item {
+    z-index: 2;
+  }
+
+  .isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /**** Isotope CSS3 transitions ****/
+
+  .isotope,
+  .isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+       -moz-transition-duration: 0.8s;
+        -ms-transition-duration: 0.8s;
+         -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+  }
+
+  .isotope {
+    -webkit-transition-property: height, width;
+       -moz-transition-property: height, width;
+        -ms-transition-property: height, width;
+         -o-transition-property: height, width;
+            transition-property: height, width;
+  }
+
+  .isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+        -ms-transition-property:     -ms-transform, opacity;
+         -o-transition-property:      -o-transform, opacity;
+            transition-property:         transform, opacity;
+  }
+
+  /**** disabling Isotope CSS3 transitions ****/
+
+  .isotope.no-transition,
+  .isotope.no-transition .isotope-item,
+  .isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+       -moz-transition-duration: 0s;
+        -ms-transition-duration: 0s;
+         -o-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+
+  /* End: Recommended Isotope styles */
+
+
+
+  /* disable CSS transitions for containers with infinite scrolling*/
+  .isotope.infinite-scrolling {
+    -webkit-transition: none;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+            transition: none;
+  }
+
+  /**** Isotope styles ****/
+
+  /* required for containers to inherit vertical size from window */
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+
+  }
+
+  #wrapper {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .element {
+    /*width: 33%;*/
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    color: #222;
+  }
+
+  .element.featured { 
+    /*width: 66%;*/
+  }
+
+  .element .content {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+    padding: 1em;
+    border: 1px solid #ccc;
+  }
+
+  .clickable .element:hover {
+    cursor: pointer;
+  }
+
+  /* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+  .clearfix:before, .clearfix:after { content: ""; display: table; }
+  .clearfix:after { clear: both; }
+  .clearfix { zoom: 1; }
+
+  </style>
+
+</head>
+<body class="demos ">
+
+  <div id="wrapper">
+  
+    <section id="content">
+  
+    
+    <div id="container" class="clickable clearfix">
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/1" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/2" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/3" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/4" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/5" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/6" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/7" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/8" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/9" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/1" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/2" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/3" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/4" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/5" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/6" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/7" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/8" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/9" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/1" alt="" /></div></div>
+      <div class="element"><div class="content"><img src="http://lorempixel.com/400/300/cats/2" alt="" /></div></div>
+    </div> <!-- #container -->
+    
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.isotope.perfectmasonry.js"></script>
+    <script>
+      $(function(){
+        
+        var $container = $('#container');
+        if( $container.width() < 300 ) {
+          numColumns = 1;
+        }
+        else if( $container.width() < 600 ) {
+          numColumns = 2;
+        }
+        else {
+          numColumns = 3;
+        }
+        var columnWidth = Math.round($container.width() / numColumns - 0.5);
+        var tileWidth = columnWidth;
+        var tileHeight = tileWidth * 0.5625;
+
+        $container.find('.element').each(function() {
+          $(this).width(tileWidth).height(tileHeight);
+        });
+
+        $container.isotope({
+          itemSelector: '.element',
+          resizable: false, // disable default resizing
+          masonry : {
+            columnWidth : columnWidth
+          }
+          // layoutMode: "perfectMasonry",
+          // perfectMasonry: {
+          //     layout: "vertical",      // Set layout as vertical/horizontal (default: vertical)
+          //     // columnWidth: columnWidth,        // Set/prefer specific column width (liquid layout tries to prefer said width)
+          //     // rowHeight: columnWidth,          // Set/prefer specific row height (liquid layout tries to prefer said height)
+          //     liquid: true,            // Set layout as liquid (default: false)
+          //     cols: 3,                 // Force to have x columns (default: null)
+          //     minCols: 1,              // Set min col count (default: 1)
+          //     maxCols: 3,              // Set max col count (default: 9999)
+          // }
+        });
+        
+        // change size of clicked element
+        $container.delegate( '.element', 'click', function(e) {
+          e.preventDefault();
+          if($(this).hasClass('featured')) {
+            $(this)
+              .width(tileWidth)
+              .height(tileHeight)
+              .removeClass('featured');
+          }
+          else {
+            $container.find('.element').each(function() {
+              $(this)
+                .width(tileWidth)
+                .height(tileHeight)
+                .removeClass('featured');
+            });
+            $(this)
+              .width(tileWidth * 2)
+              .height(tileHeight * 2)
+              .addClass('featured');
+          }
+          $container.isotope('reLayout');
+        });
+
+        // init
+        // resetTiles();
+        
+        // update columnWidth on window resize
+        $(window).smartresize(function() {
+
+          if( $container.width() < 300 ) {
+            numColumns = 1;
+          }
+          else if( $container.width() < 600 ) {
+            numColumns = 2;
+          }
+          else {
+            numColumns = 3;
+          }
+          columnWidth = Math.round($container.width() / numColumns - 0.5);
+          tileWidth = columnWidth;
+          tileHeight = tileWidth * 0.5625;
+
+          $container.find('.element').each(function() {
+            if($(this).hasClass('featured')) {
+              $(this)
+                .width(tileWidth * 2)
+                .height(tileHeight * 2);
+            }
+            else {
+              $(this)
+                .width(tileWidth)
+                .height(tileHeight)
+                .removeClass('featured');
+            }
+          });
+
+          $container.isotope({
+            // update columnWidth
+            masonry: { 
+              columnWidth: columnWidth 
+            }
+          });
+        });
+        
+      });
+    </script>
+    
+      
+    </section> <!-- #content -->
+  </div>
+
+</body>
+</html>
